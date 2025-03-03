@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.box_model {
+	width:40em;
+}
+.box_model h1, .box_model p, .box_model strong, .box_model em {
+	border: 3px solid blue;
+	margin: 5px;
+	padding: 5px;
+	line-height: 150%;
+	background-color: #C60;
+	color: white;
+}

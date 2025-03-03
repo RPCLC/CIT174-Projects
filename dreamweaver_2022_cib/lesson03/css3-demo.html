@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Features and Effects</title>
+<style type="text/css">
+body {
+	font-family: "Myriad Pro Bold";
+	margin: 0px;
+	background-image: url(images/san-francisco.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 100%;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+h1 {
+	font-size: 350%;
+	line-height:1em;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #C03;
+	}
+h2 {
+    border-radius: 20px;
+    font-size: 220%;
+    color: #FFF;
+    background-color: #000;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    margin-top: 35px;
+}
+
+.alpha {
+	height: 250px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background: rgba(120, 10, 255, 0.5);
+	font-size: 100%;
+	color: #FFF;
+	padding-bottom: 30px;
+}
+.alpha h1 {
+	color: #FFF;
+	padding-top: 0px;
+}
+.columns h3 {margin: 0px;}
+
+.columns { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px;
+}
+.round {
+	-moz-border-radius: 15px 70px 15px 70px;
+	-webkit-border-radius: 15px 70px 15px 70px;
+	border-radius: 15px 70px 15px 70px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #06F;
+	color: #FFF;
+	height: 250px;
+}
+.round h1 {
+    margin: 0px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: #FFF;
+}
+.shadow {
+	text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+div.shadow {
+	-webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+	background-color: #F90;
+	height: 250px;
+	vertical-align: middle;
+	padding-top: 70px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.shadow h1 {
+	color: #FFF;
+	height: 300px;
+	margin: 0px;
+}
+.fonts {
+	font-family: Stencil;
+}
+.stroke {
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 2px;
+}
+.gradient	{
+	width:90%;
+	height:300px;
+	background: -webkit-gradient(linear, left top, left bottom, 
+                             from(blue), to(white), 
+                             color-stop(0.5, white), color-stop(0.5, green));
+	margin-right: 5%;
+	margin-left: 5%;
+	}
+.first {
+	margin-top: 0px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 400%;
+	
+}
+section	{
+	width: 600px;
+	background: rgba(255, 255, 255, 0.7);
+	border-right-width: 10px;
+	border-left-width: 10px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #900;
+	border-left-color: #900;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	border-top: 10px solid #900;
+}
+html {
+	height: 100%;
+}
+video	{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	}
+</style>
+</head>
+
+<body>
+<section><h1 class="first">CSS3 Demo</h1>
+
+<h2>Alpha Transparency</h2>
+  <div class="alpha">
+    <h1>Alpha Transparency</h1>
+  </div>
+    
+<h2>Rounded Corners</h2>
+	<div class="round"><h1>Rounded Corners</h1></div>
+
+<h2>Drop Shadows</h2>
+	<h1 class="shadow">Drop Shadows <br>
+	on Text</h1>
+  <div class="shadow"><h1>Drop Shadows <br>
+on Boxes</h1></div>
+
+<h2>Text Strokes</h2>
+	<h1 class="stroke">Strokes on Text</h1>
+    
+    <h2>Multi-Column Layouts</h2>
+  <div class="columns">
+    <h3>Create Multi-column Layouts!</h3>
+    <p>Necatur, occus que venest asperfe rovitat haribusamus.</p>
+<p>Ibusape rchilitias dolupta qui rem alignit etur repudaero expernam, nam, natem rae aut facerum aut eum raesedi ciuntum dolorempore lam qui corest velestia eium rerum nes aut quo estem nonsequas venditiur assimus di rem idel inust, quia nonsequos acessit aquiae repta cus earcienist que ditem faccab issiniaest ea abor sit exero occatis dolupta sseria doluptaqui quo et que diassim iniendae natibust quo ipist, volupti berovit reptian dessim quis quiasi dunt min cum rest, ommolen debisi reicitatur?</p>
+<p>Aspiendemque vento excerit dolupta parci tore rehenditatur aut aut pre imuscipsunt, sus venime repre namus, con et dolorep erspeliae que labo. Invelesed moluptatur?</p>
+<p>Occus eius dissini optam aut qui con nosam adit volum vellend ucimustion remperferum fugiaero tem rae laborescitio tecumquat.</p>
+<p>Lecae ium eatur si dolo qui doluptatur, sunt antis ut voloreptibus magnihil mi, alit esciuntis derferum volorem Tem accumquatur, sitis dem quidiam exeratem quo modis aut etur, sequis quiderro tetur siminctium as alignimo ea volor ma veratur, nos imilictur anihillaccae nes dem faceati busamus cimporem eum aut autet, velectus etur? </p>
+<p>Inctem dolenda ndaerum, qui optateste volest volorest, idel et volorio nseque modicti busapic aboribustin res non cus adis verunt adis quatem liqui nustemporum ero exeriorporem voloriaerum rerum quiatur, suntiaspic tem sit qui tem cusdam ex et fuga. Sed ut ut qui ullore dellamusciis mintum aut et reriaes quamenim nos consedi vendusa perchicta nobisto restrum as dolupta sperspis evelibus.
+</p></div>
+
+<h2>Gradients</h2>
+	<div class="gradient">&nbsp;</div>
+
+</section>
+</body>
+</html>

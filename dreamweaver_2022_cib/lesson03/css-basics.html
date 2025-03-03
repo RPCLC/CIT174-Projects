@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Basics</title>
+<style type="text/css">
+
+</style>
+<link href="linked.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="container">
+<header>
+<h1>Cascading Style Sheet Basics</h1>
+</header>
+<section class="sidebar1">
+<nav>
+    <ul>
+      <li><a href="box_model">The Box Model</a></li>
+      <li><a href="#cascade">Cascade Theory</a></li>
+<li><a href="#inheritance">Inheritance Theory</a></li>
+      <li><a href="#descendant">Descendant Theory</a></li>
+      <li><a href="#specificity">Specificity</a></li>
+    </ul>
+</nav>
+<aside>
+<h1>Creating CSS Menus</h1>
+<p>The above links demonstrate a basic navigational structure using an unordered list. Using CSS you can style the list any 4way you like. Use this as a starting point and modify the properties to produce your own unique look. </p>
+<p>If you require fly-out menus, create your own using  a menu widget from Adobe's Exchange or a variety of other JavaScript or CSS solutions.</p>
+</aside>
+<!-- end .sidebar1 --></section>
+<article class="content">
+<h1 id="CSS_primer">A CSS Primer</h1>
+<p>Cascading Style Sheets were actually invented a long time ago when HTML was in its infancy. But it was not well understood and other methods of formatting web content had already been popularized and were dominating the market. It took many years and several popular books to get CSS to be recognized as a superior method for formatting webpages.</p>
+<p>To fully understand how CSS works, there are several concepts that you have to learn and practice until they become second nature.</p>
+<section id="box_model">
+<h2>The Box Model</h2>
+<p>The first concept concerns what has come to be known as &quot;the box model&quot;. Browsers reads HTML code, interpret its structure and formatting, and then display the webpage. CSS does its work by stepping between HTML and the browser, redefining how each element should be rendered. It imposes an imaginary <em>box</em> around each element and then enables you to format almost every aspect of how that box and its contents are displayed.</p>
+<p><img src="images/boxmodel.png" width="400" height="219" alt=""/></p>
+<p>CSS permits you to specify fonts, line spacing, colors, borders, background shading and graphics, margins, and padding, among other things. In most instances these boxes are invisible, and although CSS gives you the ability to format them, it does not require you to do so.</p>
+<p>CSS defines each HTML element  into one of three basic categories: Block, inline or hidden.</p>
+<h3>Block elements by default:</h3>
+<ul>
+<li>Occupy the  full width of the screen or their parent element, unless an alternative width is specified.</li>
+<li>Stack on top of other block elements, regardless of their width.</li>
+<li>Dimensions are calculated by adding up width, height, padding, borders and margins.</li>
+<li>Will expand vertically to the  height of its content, plus any padding.</li>
+<li>Include  div, h1-h6, p, li, among others.</li>
+</ul>
+<h3>Inline elements by default:</h3>
+<ul>
+<li>Appear within the body of another element</li>
+<li>Are only as wide as its content.</li>
+<li>Do not honor width or height specifications.</li>
+<li>Do honor left and right padding and margin specifications.</li>
+<li>Do not honor  top and bottom padding or margin specifications.</li>
+<li>Include  span, em, strong among others.</li>
+</ul>
+<h3>Hidden elements by default</h3>
+<ul>
+<li>Do not appear in the browser</li>
+<li>Take up no space</li>
+<li>Do not affect the flow or appearance of other elements</li>
+<li>Include head, meta, script, style among others.</li>
+</ul>
+</section>
+<section id="cascade">
+<h2>Cascade Theory</h2>
+<p>The cascade theory describes how the order and placement of rules in the style sheet or on the page affects the application of styling. In other words, if two rules conflict, which one wins out? The basic concept is that the rule closest to the element wins. Webpages often contain multiple style sheets and these may contain duplicative styling. Many companies do this on purpose, especially when they have multiple departments or divisions. Corporate headquarters will supply a &quot;main&quot; style sheet and allow the separate divisions to override these settings by inserting their own style sheets afterwards.</p>
+<h3>Cascade in Practice</h3>
+<p>The styles affecting each element are usually applied (when present) in the following order, the last being the most powerful:</p>
+<ul>
+<li>Browser default style sheet</li>
+<li>User preferences</li>
+<li>Author preferences</li>
+<li>Inline styling</li>
+<li>!Important declarations (Author)</li>
+<li>!Important declarations (User)</li>
+</ul>
+</section>
+<section id="inheritance">
+<h2>Inheritance Theory</h2>
+<p>The inheritance theory describes how one rule can be affected by one or more previously declared rules. Inheritance can affect rules of the same name as well as rules that format parent elements or elements that nest one inside another. Inheritance is tricky. It is not an all or nothing proposition. If a generic rule applies a color or size to one or more elements, this specification can be inherited if that element is not styled by a more specific default setting or targetted rule. </p>
+<h3>Inheritance in Practice</h3>
+<p>The styles affecting each element are usually applied (when present) in the following order, the last being the most powerful:</p>
+<ul>
+<li>Browser default style sheet</li>
+<li>User preferences</li>
+<li>Linked or embedded style sheets</li>
+<li>General styles</li>
+<li>Specific styles</li>
+</ul>
+</section>
+<section id="descendant">
+<h2>Descendant Theory</h2>
+<p>CSS formatting can be very confusing for designers coming from the print world. These designers are accustomed to applying styles directly to text and objects one at a time. If you copy the text and paste it elsewhere, the formatting comes along. In some cases, styles can be based on one another, but this relationship is intentional. </p>
+<p>On the other hand, CSS formatting of one element can overlap or influence another unintentionally via inheritance. When one element is inserted within another, it can adopt some aspects of its parent's styling. In fact, the descendant theory describes how formatting can be targetted to a particular element based on its position relative to other elements. </p>
+<p>By constructing a selector using multiple elements in sequence, in conjunction with ID and class attributes, you can formatting specific instances of text or other content as it appears within your webpage. 
+It may be helpful to think of it as  the elements formatting themselves. Using CSS in this way changes the way we fundamentally think of formatting in general. Styling is no long intrinsic to the element itself, but to the entire page and the way the code is structured. You don&rsquo;t apply the formatting to the element, per se, as much as the elements adopt styling from their position within the code. </p>
+</section>
+<section id="specificity">
+<h2>Specificity</h2>
+<p>Specificity describes how browsers determine what formatting to apply when two or more rules conflict. Some refer to this as <em>weight</em>—giving certain rules more priority based on order (cascade), proximity, inheritance, and descendant relationships. Such conflicts are the bane of most web designers&rsquo; existence and can waste hours of time in troubleshooting errors in CSS formatting. Let&rsquo;s take a look at how specificity affects the weight of some sample rules.</p>
+<p>One technique that designers use to determine which rule is more specific than another is by giving numeric values to each part of the selector. Each HTML tag gets 1 point, each class gets 10 points,  each ID gets 100 points and inline style attributes get 1000 points. Then, by adding up the component values of the selector its specificity can be calculated and compared to other rules.</p>
+<h3>Examples:</h3>
+<pre>* (wildcard) { } 0 + 0 + 0 + 0    =    0 points
+h1           { } 0 + 0 + 0 + 1    =    1 point
+a:hover      { } 0 + 0 + 0 + 2    =    2 points
+ul li        { } 0 + 0 + 0 + 1    =    2 points 
+.class       { } 0 + 0 + 10 + 0   =   10 points
+.class h1    { } 0 + 0 + 10 + 1   =   11 points
+#id          { } 0 + 100 + 0 + 0  =  100 points
+#id.class    { } 0 + 100 + 10 + 0 =  110 points
+#id.class h1 { } 0 + 100 + 10 + 1 =  111 points
+style=&quot; &quot;    { } 1000 + 0 + 0 + 0 = 1000 points</pre>
+</section>
+<!-- end .content -->
+</article>
+<section class="sidebar2">
+<aside>
+<h1>Browser Specific Prefixes</h1>
+  <p>As we have to deal with the introduction and implementation of HTML5, we also have to deal with the introduction of version 3 of Cascading Style Sheets. The new version offers many improvements and exciting new features, but is still under development. The challenge to the modern web designer with CSS3 is how to take advantage of these new features today before the specifications  have been fully  implemented in all  browsers. It's really a hodge podge of support. Some properties already work natively, while other aspects are not finalized as the vendors  experiment and try to perfect them. Until it's fully supported, many of the new CSS properties require a vendor <em>prefix </em>to make the styling work in a specific browser. Over time, as the properties become standardized, the browser prefixes will be deprecated. Since this process is ongoing, we don't know when this will happen so it's recommended that you follow all vendor prefixed settings with the standard markup.</p>
+<h2>Vendor prefixes</h2>
+<ul>
+<li>-ms- (Internet Explorer)</li>
+<li>-moz- (Mozilla - Firefox)</li>
+<li>-o- (Opera)</li>
+<li>-webkit- (Chrome, Safari)</li>
+</ul>
+</aside>
+</section>
+<footer>
+<h1>Footer</h1>
+<p>The footer usually contains the copyright and contact information. Some footers also contain alternate navigation menus and/or a link to a site map.</p>
+</footer>
+  <!-- end .container --></div>
+</body>
+</html>

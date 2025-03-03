@@ -1,0 +1,112 @@
+/* Scss Document */
+body {
+	background: #FFC;
+}
+header {
+	text-align: center;
+	padding: 30px 10px;
+	background: url("../images/favcity-logo.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-color: $logoyellow;
+	border-bottom: solid 1px $logoyellow;
+	background-position: center;
+	
+
+	h2 {
+		font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif";
+		font-size: 300%;
+		color: $lightyellow;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		text-shadow: 0px 5px 5px rgba(0,0,0,.5);
+		line-height: 1.1;
+		margin: 15px 0 10px 0;
+	}
+
+	p {
+		color: #FFF;
+		text-transform: uppercase;
+		letter-spacing: .5em;
+		line-height: 1.1;
+		margin: 10px 0 0 0;
+		font-weight: bold;
+	    text-shadow: 0px 3px 3px rgba(0,0,0,.7);
+
+	}
+}
+#wrapper {	
+	border-left: 10px solid $logoyellow;
+	border-right: 10px solid $logoyellow;
+	padding-bottom: 0px;
+	max-width: 1100px;
+	margin: 0 auto;
+	background: #FFC;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	nav {
+		border-bottom: 1px solid $lightyellow;
+		ul {
+			margin:5px;
+			padding:0;
+		li {
+			a {
+			background-image: -webkit-linear-gradient(90deg,$lightyellow 0%,$darkyellow 100%);
+			background-image: linear-gradient(0deg,$lightyellow 0%,$darkyellow 100%);
+			border-top: solid 1px $lightyellow;
+			border-bottom: solid 1px $darkyellow;
+			border-left: solid 1px $lightyellow;
+			border-right: solid 1px $darkyellow;
+				border-radius: 5px;
+			}
+		}
+	}
+		
+	}
+	aside:first-child {
+		float:left;
+		width:29%;
+		}
+	article {
+		width:41%;
+		float:left;
+		box-sizing: border-box;
+		padding: 0 5px;
+		background: #FFF;
+
+	}
+	aside {
+		float:right;
+		width: 29%;
+		box-sizing: border-box;
+		padding: 0 5px;
+		background: #FFC;
+}
+	footer {
+		clear: both;
+		margin: 10px 0 0;
+		background: $logoyellow;
+		font-size: 90%;
+		color: $logoblue;
+		padding: 15px 20px;
+	}
+	}
+	h1, h2, h3, h4, h5, h6, p {
+		padding-left: 10px /1100px * 100%;
+		padding-right: 10px /1100px * 100%;
+
+	}
+@media screen and (max-width:840px) {
+	header {
+			background-size: 100% auto;
+		h2 {
+			font-size: 200%;
+			letter-spacing: .05em;
+			margin-bottom: 5px;
+		}
+		p {
+			font-size: 90%;
+			letter-spacing:  .05em;
+		}
+
+	}
+}
