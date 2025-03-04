@@ -1,5 +1,0 @@
-I valued learning about HTML because I do some modding for games that were made back in the early 2000s. Often I have to alter the HTML or at least view one, but I had never understood what they represent. Learning that HTML's have elements that cover content within the HTML made it much easier to understand for me. It will take me a long time to learn the language, but with practice and training I know I'll be able to read it like a second language. 
-
-The table of contents given in the textbook truly helped me understand the labeling in HTML's. What clicks is how to read whats inside of an HTML. Like with a programming language, being able to read certain terms that represent a language for the computer is key to understanding this concept. 
-
-I will be using this knowledge everyday for the rest of my life as a tech nerd. HTML is the life and blood of technological functions, and I look forward to put these skills into practice.
