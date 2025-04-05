@@ -1,0 +1,3 @@
+In this lesson I learned about the thought process behind making a webpage. I was able to recognize and internalize the need for viewability and purpose.
+Since I grew up with websites, they are common knowledge for me, however the salability and purpose of website is something I did not fully understand. 
+I will use this knowledge when creating my webpage for the final project. It is important for aesthetics to be present and for ease of usage for the user.
