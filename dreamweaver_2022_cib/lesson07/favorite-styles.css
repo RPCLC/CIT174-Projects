@@ -53,3 +53,28 @@ footer {
     color: #069;
     background-color: #ED5;
 }
+address {
+    color: #069;
+}
+table {
+    font-size: 90%;
+    margin: 2em;
+    width: 95%;
+    border-left: 1px solid #069;
+    border-right: 1px solid #069;
+    border-bottom: 1px solid #069;
+    border-top: 1px solid #FFC;
+    padding: 4px;
+    border-collapse: collapse;
+    text-align: center;
+}
+a {
+}
+.container.navbar-brand {
+    display: none;
+}
+
+header h2 a:link, header h2 a:visited {
+    color: inherit;
+    text-decoration: none;
+}
