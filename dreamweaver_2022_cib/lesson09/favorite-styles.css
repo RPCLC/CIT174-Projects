@@ -2,6 +2,9 @@
 .bg-dark {
     background-color: #eedd66 !important;
 }
+.navbar-nav {
+    margin: 0 auto;
+}
 .navbar-dark .navbar-nav .nav-link  {
     font-family: source-sans-pro;
     color: #006699;
@@ -121,4 +124,23 @@ table caption {
 .profile {
     border-left: 3px solid #069;
     border-bottom: 10px solid #069;
+}
+.carousel-caption {
+    font-size: 130%;
+    font-weight: 700;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+.carousel-caption h5 {
+    font-size: 130%;
+    font-weight: 700;
+}
+#festivals {
+}
+#festivals {
+}
+#seminars {
+}
+#seminars {
+}
+#seminars {
 }
